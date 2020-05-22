@@ -31,8 +31,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "npm run build:gatsby && npm run build:lambda",
-    "build:gatsby": "gatsby build",
+    "prod": "npm run build; npm run build:lambda",
+    "build": "gatsby build",
     "build:lambda": "netlify-lambda build functions",
     "start:lambda": "netlify-lambda serve functions",
     "develop": "gatsby develop",
