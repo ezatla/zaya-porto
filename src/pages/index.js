@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import Instagram from "../components/instagram"
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <SEO title="Home" />
     <h1>Hi people</h1>
 
@@ -18,7 +18,7 @@ const IndexPage = () => (
     </div>
     <Instagram></Instagram>
     <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  </>
 )
 
 export default IndexPage
