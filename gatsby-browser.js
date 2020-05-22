@@ -1,5 +1,5 @@
 const React = require("react")
-const Layout = require("./src/components/Layout")
+const Layout = require("./src/components/layout")
 
 exports.wrapPageElement = ({ element, props }) => (
   // props provide same data to Layout as Page element will get
