@@ -4,10 +4,6 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-<<<<<<< HEAD
-import Instagram from "../components/instagram"
-=======
->>>>>>> 5bae635d2218a13a6c3eb8313c1db49a6707799d
 
 const IndexPage = () => (
   <Layout>
