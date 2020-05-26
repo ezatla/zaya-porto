@@ -16,6 +16,7 @@ const HeaderWrapper = styled.div`
   padding: 1rem 2rem;
   text-decoration: none;
   transition: all 0.4s ease-in-out;
+  top: 0;
 
   & .logo_nav {
     display: flex;

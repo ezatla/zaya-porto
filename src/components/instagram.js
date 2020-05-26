@@ -51,6 +51,7 @@ const Instagram = () => {
       <div className="two_column">
         {slimupPosts(gramz, 0, 2).map(gram => (
           <ModalImage
+            showRotate
             hideZoom
             key={gram.id}
             small={gram.display_resources}
@@ -67,6 +68,7 @@ const Instagram = () => {
       <div className="three_column">
         {slimupPosts(gramz, 2, 5).map(gram => (
           <ModalImage
+            showRotate
             hideZoom
             key={gram.id}
             small={gram.display_resources}
@@ -79,6 +81,7 @@ const Instagram = () => {
       <div className="four_column">
         {slimupPosts(gramz, 12, 16).map(gram => (
           <ModalImage
+            showRotate
             hideZoom
             key={gram.id}
             small={gram.display_resources}
@@ -91,6 +94,7 @@ const Instagram = () => {
       <div className="three_column">
         {slimupPosts(gramz, 9, 12).map(gram => (
           <ModalImage
+            showRotate
             hideZoom
             key={gram.id}
             small={gram.display_resources}
@@ -106,6 +110,7 @@ const Instagram = () => {
           //   <img src={gram.display_url} alt={gram.caption} />
           // </a>
           <ModalImage
+            showRotate
             hideZoom
             key={gram.id}
             small={gram.display_resources}

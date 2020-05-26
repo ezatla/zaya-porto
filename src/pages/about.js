@@ -1,22 +1,16 @@
 import React from "react"
+import About from "../components/about"
+import styled from "styled-components"
+
+const Wrapper = styled.div`
+  /* margin-top: 4rem; */
+`
 
 const about = () => {
   return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
-      fuga consequuntur culpa rem, ab sapiente eius quisquam ullam optio. Vitae,
-      assumenda quia? Sed id, voluptatem ducimus debitis tempora officia
-      dignissimos? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Necessitatibus fuga consequuntur culpa rem, ab sapiente eius quisquam
-      ullam optio. Vitae, assumenda quia? Sed id, voluptatem ducimus debitis
-      tempora officia dignissimos? Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Necessitatibus fuga consequuntur culpa rem, ab sapiente
-      eius quisquam ullam optio. Vitae, assumenda quia? Sed id, voluptatem
-      ducimus debitis tempora officia dignissimos? Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Necessitatibus fuga consequuntur culpa rem,
-      ab sapiente eius quisquam ullam optio. Vitae, assumenda quia? Sed id,
-      voluptatem ducimus debitis tempora officia dignissimos?
-    </div>
+    <Wrapper>
+      <About></About>
+    </Wrapper>
   )
 }
 
