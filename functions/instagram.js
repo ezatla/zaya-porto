@@ -2,7 +2,7 @@ require("isomorphic-fetch")
 
 // This is our serverless file where front-end hits the below link to get posts
 
-const url = `https://www.instagram.com/graphql/query/?query_hash=9dcf6e1a98bc7f6e92953d5a61027b98&variables={"id":"1534872938","first":12}`
+const url = `https://www.instagram.com/graphql/query/?query_hash=9dcf6e1a98bc7f6e92953d5a61027b98&variables={"id":"1534872938","first":18}`
 
 const cache = {
   lastFetch: 0,
@@ -32,6 +32,7 @@ function slimUpPosts(response) {
       display_url: edge.node.display_url,
       url: `https://instagram.com/p/${edge.node.shortcode}`,
       id: edge.node.id,
+      display_resources: edge.node.display_resources[0].src,
       caption: edge.node.edge_media_to_caption.edges[0].node.text,
     })
   )

@@ -1,4 +1,5 @@
 const React = require("react")
+// default fixess issues with build of pages
 const Layout = require("./src/components/layout").default
 
 exports.wrapPageElement = ({ element, props }) => (
