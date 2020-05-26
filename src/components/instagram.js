@@ -132,6 +132,9 @@ const PostsWrapper = styled.div`
   .__react_modal_image__icon_menu {
     padding: 4px;
   }
+  .__react_modal_image__header {
+    z-index: 999;
+  }
 
   & .one_column {
     padding: 2px;
