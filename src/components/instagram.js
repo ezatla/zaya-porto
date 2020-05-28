@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import ModalImage from "react-modal-image"
-// // CANNOT USE CONTEXT HOOKS CAUSE ERROR IN BUILD
-import { PortContext } from "../context/portContext"
+import Loading from "./loading"
 
 const url = `/.netlify/functions/instagram`
 
@@ -43,7 +42,7 @@ const Instagram = () => {
       })
   }, [])
 
-  if (loading) return <p>loading..</p>
+  if (loading) return <Loading />
   // const gramz = useInstagram()
 
   return (
@@ -135,7 +134,6 @@ const PostsWrapper = styled.div`
   .__react_modal_image__header {
     z-index: 999;
   }
-
   & .one_column {
     padding: 2px;
 
@@ -166,6 +164,14 @@ const PostsWrapper = styled.div`
     }
     & div img {
       padding: 1px;
+    }
+  }
+
+  @media all and (max-width: 668px) {
+    .two_column,
+    .three_column,
+    .four_column {
+      flex-wrap: wrap;
     }
   }
 `

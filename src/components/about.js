@@ -6,10 +6,25 @@ import styled from "styled-components"
 const Wrapper = styled.div``
 
 const AboutWrapper = styled.div`
-  margin-top: 3rem;
+  margin-top: 6rem;
   display: flex;
   & .gatsby-image-wrapper {
     width: 100%;
+  }
+
+  & .info {
+    margin-left: 30px;
+  }
+  & .gatsby-image-wrapper {
+    margin-left: -30px;
+  }
+
+  @media all and (max-width: 668px) {
+    flex-wrap: wrap;
+
+    & .gatsby-image-wrapper {
+      margin-left: initial;
+    }
   }
 `
 
@@ -34,7 +49,7 @@ const About = () => {
       <AboutWrapper>
         <Img fluid={data.profileImg.childImageSharp.fluid} />
 
-        <div dangerouslySetInnerHTML={{ __html: html }}></div>
+        <div className="info" dangerouslySetInnerHTML={{ __html: html }}></div>
       </AboutWrapper>
     </Wrapper>
   )

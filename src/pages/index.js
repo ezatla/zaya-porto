@@ -1,15 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import Instagram from "../components/instagram"
 
 const IndexPage = () => {
   return (
     <>
-      <SEO title="Home" />
+      <SEO title="Work" />
 
       <Instagram></Instagram>
     </>
@@ -17,3 +13,8 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+/* Credits
+  https://www.gatsbyjs.org/
+  https://loading.io/css/
+*/

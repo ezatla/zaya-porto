@@ -1,19 +1,17 @@
-import React, { useContext } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import { PortContext } from "../context/portContext"
 import { createGlobalStyle } from "styled-components"
 
 import Header from "./header"
+import Footer from "./footer"
 import { Normalize } from "styled-normalize"
 
 import "./layout.css"
 // Global Style
 export const GlobalStyles = createGlobalStyle`
 
-/* normalize */
-${Normalize}
 
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
@@ -26,6 +24,11 @@ ${Normalize}
 html, body {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    transition:all .3s ease-in-out; 
+   	-o-transition:all .3s ease-in-out; 
+   	-moz-transition:all .3s ease-in-out; 
+   	-webkit-transition:all .3s ease-in-out;
+     background: #fcfcfc;
   }
 ol,
 ul {
@@ -63,6 +66,10 @@ img{
 .isScrolled {
     height: 7%;
   }
+
+  
+/* normalize */
+${Normalize}
 `
 
 const Layout = ({ children }) => {
@@ -75,9 +82,6 @@ const Layout = ({ children }) => {
       }
     }
   `)
-  const { loading } = useContext(PortContext)
-
-  if (loading) return <p>Loadingggg...</p>
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
@@ -89,12 +93,8 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
+      <Footer />
     </>
   )
 }

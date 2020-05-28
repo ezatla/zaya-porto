@@ -2,7 +2,8 @@ import React, { useLayoutEffect, useState } from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import { FaTwitter, FaFacebook, FaLinkedinIn } from "react-icons/fa"
+
+import Social from "./social"
 
 const HeaderWrapper = styled.div`
   position: fixed;
@@ -17,6 +18,7 @@ const HeaderWrapper = styled.div`
   text-decoration: none;
   transition: all 0.4s ease-in-out;
   top: 0;
+  background: #fafafa;
 
   & .logo_nav {
     display: flex;
@@ -49,13 +51,10 @@ const HeaderWrapper = styled.div`
       }
     }
   }
-  & .social {
-    display: flex;
-    flex-grow: 1;
-    justify-content: flex-end;
 
-    & > * {
-      margin-right: 18px;
+  @media all and (max-width: 440px) {
+    & .social {
+      display: none;
     }
   }
 `
@@ -99,9 +98,7 @@ const Header = ({ siteTitle }) => {
           </div>
         </div>
         <div className="social">
-          <FaTwitter />
-          <FaFacebook />
-          <FaLinkedinIn />
+          <Social />
         </div>
       </HeaderWrapper>
     </header>
