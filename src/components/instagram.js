@@ -44,7 +44,6 @@ const Instagram = () => {
 
   if (loading) return <Loading />
   // const gramz = useInstagram()
-
   return (
     <PostsWrapper>
       <div className="two_column">
