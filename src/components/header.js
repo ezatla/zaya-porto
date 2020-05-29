@@ -10,7 +10,7 @@ const HeaderWrapper = styled.div`
   width: 100%;
   background: #fff;
   height: 10%;
-  z-index: 99;
+  z-index: 9999;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
