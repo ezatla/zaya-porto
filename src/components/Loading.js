@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const Wrapper = styled.div`
+const LoadingWrapper = styled.div`
   background: #fafafa;
   justify-content: center;
   display: flex;
@@ -50,12 +50,12 @@ const Wrapper = styled.div`
 
 const Loading = () => {
   return (
-    <Wrapper>
+    <LoadingWrapper>
       <div className="ripple">
         <div></div>
         <div></div>
       </div>
-    </Wrapper>
+    </LoadingWrapper>
   )
 }
 

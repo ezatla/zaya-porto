@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 import Social from "./social"
 
-const Wrapper = styled.div`
+const FooterWrapper = styled.div`
   margin-top: 2rem;
   margin-bottom: 1rem;
   display: flex;
@@ -29,12 +29,12 @@ const Wrapper = styled.div`
 
 const Footer = () => {
   return (
-    <Wrapper>
+    <FooterWrapper>
       <footer>{new Date().getFullYear()} &copy;</footer>
       <div className="footer-social">
         <Social />
       </div>
-    </Wrapper>
+    </FooterWrapper>
   )
 }
 

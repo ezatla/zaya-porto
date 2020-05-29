@@ -3,16 +3,16 @@ import About from "../components/about"
 import styled from "styled-components"
 import SEO from "../components/seo"
 
-const Wrapper = styled.div`
+const AboutWrapper = styled.div`
   /* margin-top: 4rem; */
 `
 
 const about = () => {
   return (
-    <Wrapper>
+    <AboutWrapper>
       <SEO title="About" />
       <About></About>
-    </Wrapper>
+    </AboutWrapper>
   )
 }
 
