@@ -12,7 +12,6 @@ import "./layout.css"
 // Global Style
 export const GlobalStyles = createGlobalStyle`
 
-
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
 
@@ -69,7 +68,7 @@ img{
 
   
 /* normalize */
-${Normalize}
+/* ${Normalize} */
 `
 
 const Layout = ({ children }) => {

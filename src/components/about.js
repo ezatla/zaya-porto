@@ -36,7 +36,7 @@ const About = () => {
       }
       profileImg: file(relativePath: { eq: "about.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 2000) {
             ...GatsbyImageSharpFluid
           }
         }
