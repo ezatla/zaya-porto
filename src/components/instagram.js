@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import ModalImage from "react-modal-image"
-import Loading from "./loading"
+import Loading from "./Loading"
 
 const url = `/.netlify/functions/instagram`
 
