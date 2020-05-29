@@ -13,7 +13,7 @@ const FooterWrapper = styled.div`
   bottom: 0;
   width: 100%;
   z-index: 99;
-  background: #fcfcfc;
+  background: #fafafa;
   align-items: baseline;
   .footer-social {
     display: none;
