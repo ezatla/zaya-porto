@@ -68,7 +68,7 @@ img{
 
   
 /* normalize */
-/* ${Normalize} */
+${Normalize}
 `
 
 const Layout = ({ children }) => {
@@ -83,6 +83,7 @@ const Layout = ({ children }) => {
   `)
   return (
     <>
+      <GlobalStyles></GlobalStyles>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
