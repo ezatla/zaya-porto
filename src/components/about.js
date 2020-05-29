@@ -31,15 +31,15 @@ const AboutWrapper = styled.div`
 const About = () => {
   const data = useStaticQuery(graphql`
     query {
+      aboutMe: markdownRemark(frontmatter: { title: { eq: "about me" } }) {
+        html
+      }
       profileImg: file(relativePath: { eq: "about.png" }) {
         childImageSharp {
-          fluid(maxWidth: 2000) {
+          fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }
-      }
-      aboutMe: markdownRemark(frontmatter: { title: { eq: "about me" } }) {
-        html
       }
     }
   `)
@@ -48,9 +48,9 @@ const About = () => {
     <Wrapper>
       <AboutWrapper>
         <Img fluid={data.profileImg.childImageSharp.fluid} />
-
         <div className="info" dangerouslySetInnerHTML={{ __html: html }}></div>
       </AboutWrapper>
+      damnnn
     </Wrapper>
   )
 }

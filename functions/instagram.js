@@ -21,7 +21,7 @@ async function getPosts() {
   // setting cache posts & time
   cache.lastFetch = Date.now()
   cache.posts = posts
-  console.log(posts)
+  // console.log(posts)
   return posts
 }
 
