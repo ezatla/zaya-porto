@@ -42,7 +42,7 @@ const Instagram = () => {
       })
   }, [])
 
-  if (loading) return <p>loadinggg</p>
+  if (loading) return <Loading />
   // const gramz = useInstagram()
   return (
     <PostsWrapper>
