@@ -50,7 +50,6 @@ const About = () => {
         <Img fluid={data.profileImg.childImageSharp.fluid} />
         <div className="info" dangerouslySetInnerHTML={{ __html: html }}></div>
       </AboutWrapper>
-      damnnn
     </Wrapper>
   )
 }
