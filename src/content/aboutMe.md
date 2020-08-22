@@ -6,10 +6,8 @@ title: "about me"
 
 I’m a photographer based out of Sydney, AU. I’m lucky to travel the world, documenting this beautiful planet of ours.
 
-If you like the Faggot let's shoot you in head, 🔫holy crab.
-
-Content is Content🔥🔥🔥🤞✌🔥🔥🔥
+Contact me for collaboration
 
 I’m a photographer based out of Sydney, AU. I’m lucky to travel the world, documenting this beautiful planet of ours.
 
-Content is Content🔥🔥🔥🤞✌🔥🔥🔥
+ZayaOdesho96@gmail.com
