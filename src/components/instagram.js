@@ -94,7 +94,7 @@ const Instagram = () => {
           <ModalImage
             showRotate
             hideZoom
-            key={gram.id}
+            key={gram.id} 
             small={gram.display_resources}
             large={gram.display_url}
             alt={gram.caption}
@@ -143,15 +143,18 @@ const PostsWrapper = styled.div`
 
   & .two_column {
     display: flex;
+    align-items: baseline;
 
-    & div img {
+
+    & div {
+      max-height: 680px;
       padding: 1px 2px;
     }
   }
 
   & .three_column {
     display: flex;
-    & div img {
+    & div {
       padding: 1px 2px;
     }
   }
