@@ -144,11 +144,13 @@ const PostsWrapper = styled.div`
   & .two_column {
     display: flex;
     align-items: baseline;
+    overflow: hidden;
 
 
     & div {
       max-height: 680px;
       padding: 1px 2px;
+      overflow: hidden;
     }
   }
 
