@@ -156,6 +156,9 @@ const PostsWrapper = styled.div`
 
   & .three_column {
     display: flex;
+    max-height: 420px;
+    overflow: hidden;
+    align-items: center;
     & div {
       padding: 1px 2px;
     }
@@ -169,6 +172,13 @@ const PostsWrapper = styled.div`
     & div img {
       padding: 1px;
     }
+  }
+
+  .four_column{
+    display: flex;
+    max-height: 300px;
+    align-items: center;
+    overflow: hidden;
   }
 
   @media all and (max-width: 668px) {
