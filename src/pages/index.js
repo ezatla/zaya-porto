@@ -5,10 +5,10 @@ import Instagram from "../components/instagram"
 class ErrorBoundary extends React.Component {
 
   state = {
-    error: ''
+    error: null
   }
   static getDerivedStateFromError(error) {
-    return { error: error.toSring() }
+    return { error }
   }
 
   render() {
