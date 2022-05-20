@@ -47,7 +47,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "production": "yarn run build",
+    "production": "yarn run build ",
     "prod": "npm run build && npm run build:lambda",
     "build": "gatsby build",
     "build:lambda": "netlify-lambda build functions",
