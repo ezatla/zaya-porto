@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Zaya`,
@@ -64,5 +68,30 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    // Application id provided by Unsplash
+    // Collections must be public to return photos
+    {
+      resolve: `gatsby-source-unsplash`,
+      options: {
+        appId: `${process.env.UNSPLASH_API_KEY}`,
+        collections: [
+          `642332`
+        ],
+        // optional: will only get page 1, so increase this count to include > 10 photos
+        perPage: `50`
+      },
+    },
+    // lazysizes
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+          },
+          `gatsby-remark-lazy-load`,
+        ]
+      }
+    }
   ],
 }

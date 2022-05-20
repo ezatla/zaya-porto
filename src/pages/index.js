@@ -1,6 +1,7 @@
 import React from "react"
 import SEO from "../components/seo"
 import Instagram from "../components/instagram"
+import Unsplash from "../components/unsplash"
 import styled from 'styled-components'
 
 
@@ -35,7 +36,7 @@ const IndexPage = () => {
     <>
       <SEO title="Work" />
       <ErrorBoundary>
-          <Instagram></Instagram>
+        <Unsplash></Unsplash>
       </ErrorBoundary>
 
     </>
