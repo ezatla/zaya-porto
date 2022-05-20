@@ -182,7 +182,7 @@ const PostsWrapper = styled.div`
       padding: 2px;
     }
   }
-
+ 
   & .user{
     position: absolute;
     bottom: 0;
